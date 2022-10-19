@@ -1,0 +1,298 @@
+<!-- 
+    Whenever we want to present sports events, or stocks, reports or train timetables
+    a grid system the best opportunity we have. We often leverage that presentation
+    through a table option. Table options oftenly represents rows and columns a bit like a spreadsheet.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Tables in HTML</title>
+</head>
+<body>
+
+    <h1>Tables</h1>
+    <hr /><br />
+
+    <!-- 
+        Tables is a representation of information through a grid format.
+        It allows us to to understand complex data by referencing information on two axes.
+
+        Each block in the grid is refered to as a "table cell". In HTML we write these 
+        tables out row by row.
+        The common basic table is initiated through the table element tag: <table> </table>
+        Then we add "table rows": <tr> </tr>
+        And each table row should include "table data", which is writen with: <td> </td>
+     -->
+
+     <table>
+        <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>500</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>700</td>
+            <td>800</td>
+            <td>900</td>
+        </tr>
+     </table>
+
+     <br />
+
+     <p>
+        Notice how we have 3 rows, with data inside. Aswell as three columns with each 3 rows.
+     </p>
+
+     <hr /><br />
+
+
+     <!-- 
+        Unfortuntately a basic table lacks some heading information, since we hae no idea what each row or column means.
+        This is achieved with table headers, which is by default presented with a bold texture. 
+        the build is very similair, but we use "table head" element tag: <th> </th>
+        Then like before we add different table rows and fill out the data. 
+        
+        We finallize the table header element tag with a scope="", indicating if it's representing a column or a row. 
+      -->
+
+      <table>
+        <tr>
+            <th></th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+        </tr>
+        <tr>
+            <th scope="row">Meters run</th>
+            <td>2000</td>
+            <td>4000</td>
+        </tr>
+        <tr>
+            <th scope="row">Meters swimmed</th>
+            <td>1000</td>
+            <td>3200</td>
+        </tr>
+      </table>
+
+     <p>
+        Notice the headings in a bold texture. Once again we are having 3 columns with 3 rows. <br />
+        The first row has an empty th, since we want it to look neat and correct through out the days.
+     </p>
+
+     <hr /><br />
+
+     <!-- 
+        Sometimes tables should span over more than a single column, and one way to achieve this is by using 
+        the inbuilt feature called colspan="" which allows us to inside the quotation marks set the amount of 
+        columns a given table data cell should span over. This is highly useable whenever we want to present 
+        specific actions given over days or maybe hours, if our table head would represent different days or hours. 
+
+        The principle dosn't change of how we setup the tables, but like the scope, we can define a another attribute
+        named colspan after the inside opening element tag: <td colspan=""> </td>
+      -->
+
+      <table>
+        <tr>
+            <th></th>
+            <th scope="col">9am</th>
+            <th scope="col">10am</th>
+            <th scope="col">11am</th>
+            <th scope="col">12am</th>
+        </tr>
+        <tr>
+            <th scope="row">Wednesday</th>
+            <td colspan="2">Geography</td>
+            <td>Math</td>
+            <td>Programming</td>
+        </tr>
+        <tr>
+            <th scope="row">Thursday</th>
+            <td colspan="3">Programming</td>
+            <td colspan="">Software System</td>
+        </tr>
+      </table>
+
+      <p>
+        Notice how different classes are spanning over multiple hours. <br />
+        While software System dosn't start before the last hour. 
+     </p>
+
+     <hr /><br />
+
+     <!-- 
+        So surprisingly enough you can also span over rows.
+        So just like spanning through multiple colums where hours would be defined at top,
+        we could also simply span over rows. This gives us a huge workfield of opportunities. 
+
+        We define this by using the inbuilt attribute rowspan="" which is very similair to colspan="".
+      -->
+
+      <table>
+        <tr>
+            <th></th>
+            <th scope="col">ABC</th>
+            <th scope="col">BBC</th>
+            <th scope="col">CNN</th>
+        </tr>
+        <tr>
+            <th scope="row">6pm-7pm</th>
+            <td rowspan="2">Movie</td>
+            <td>Comedy</td>
+            <td>News</td>
+        </tr>
+        <tr>
+            <th scope="row">7pm - 8pm</th>
+            <td>Sport</td>
+            <td>Current Affairs</td>
+        </tr>
+      </table>
+
+      <p>
+        It might be difficult to see, but the Movie section is spanning over two rows, <br />
+        and by default when we go to the next row and enter a new table data, since the Movie <br />
+        element is already defined to take up two rows, code block automaticly puts the Sport <br />
+        element at the second position.
+     </p>
+
+     <hr /><br />
+
+
+     <!-- 
+        The last table option is called long tables.
+        Just like the HTML is build up with a header, body and footer - The Long Table setup shares exactly same structure.
+
+        We define a table as we normally would: <table> </table>
+        Then we add in a "theader": <thead> </thead>
+        inside of the thead we add our rows, columns and data. 
+
+        Then we add a "tbody" section: <tbody> </tbody>
+        This section will be filled out with the context of the actual data, this is normal structure again with rows, columns and table data.
+
+        At the end we insert a "tfoot" section which rounds up the Long table section: <tfoot> </tfoot>
+        just like normally we will indulge with rows, columns and table cell data. 
+
+        the following example should make sense after you read this.
+      -->
+
+      <table>
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Income</th>
+                <th scope="col">Expenditure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1st January</th>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th scope="row">2st January</th>
+                <td>285</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <th scope="row">3st January</th>
+                <td>300</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th scope="row">4st January</th>
+                <td>230</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <th scope="row">5st January</th>
+                <td>500</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <th scope="row">6st January</th>
+                <td>250</td>
+                <td>38</td>
+            </tr>
+            <tr>
+                <th scope="row">7st January</th>
+                <td>250</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <th scope="row">8st January</th>
+                <td>250</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <th scope="row">9st January</th>
+                <td>250</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <th scope="row">10st January</th>
+                <td>250</td>
+                <td>23</td>
+            </tr>
+
+            <tr>
+                <th scope="row">11st January</th>
+                <td>250</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <th scope="row">12st January</th>
+                <td>250</td>
+                <td>77</td>
+            </tr>
+            <tr>
+                <th scope="row">13st January</th>
+                <td>250</td>
+                <td>876</td>
+            </tr>
+            <tr>
+                <th scope="row">14st January</th>
+                <td>250</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <th scope="row">15st January</th>
+                <td>250</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <th scope="row">16st January</th>
+                <td>250</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <th scope="row">17st January</th>
+                <td>250</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>4565</td>
+                <td>1349</td>
+            </tr>
+        </tfoot>
+      </table>
+
+      <p>
+        This shows the effectiveness of a Long table. Since we here very easy <br />
+        can design a somewhat usefull spreadsheet, indicating whats top, body and footer. 
+     </p> 
+
+     <hr /><br />
+      
+</body>
+</html>
