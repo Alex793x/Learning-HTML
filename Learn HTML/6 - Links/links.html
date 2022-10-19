@@ -1,0 +1,105 @@
+<!-- 
+    It is a very common thing to link content to different content. 
+    Most websites are made up of other links to other websites, or adds, banner adds, 
+    youtube videos or email links. 
+
+    It is a very normal thing to link certain things to your website... think about Wikipedia
+    Whenever we enter Wikipedia millions of references in the form of links would be placed.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Links</title>
+</head>
+<body>
+
+    <!-- 
+        We use the ancor tag <a href="  YOUR LINK HERE IN BETWEEN   "> </a>:
+        We call this ancoring... because we ancor a link to a specific point, 
+        meaning that inbetween the opening / closing tag, we specify a word, to represent the link. 
+        For instance we could specify an IMDB Link.  
+     -->
+
+     <h1 id="top">Lord of the Rings</h1>
+     <a href="#prologue">Prologue</a>
+
+     <p>
+        My favorite move from the trilogy - Lord of the Rings is the Two Towers. 
+        check out their <a href="https://www.imdb.com/title/tt0167261/"> IMDB</a> score.
+     </p>
+
+     <!-- 
+        Beside linking to other websites, we could also link to a different part of our website. 
+        Since most pages on our future website would be made up of many different HTMLs files.
+        Whenever these files are in the same directory, we can ancor each section with references through the ancor tag. 
+        This way a user can click on different part of our website and actually go there.
+
+        This way of organizing and pathwaying to different aspects and places of your website is called 
+        relative URLS. It is a shorhand way of telling the "browser" that any relative urls we pin within the ancor
+        is either a child or parent file within the same directory. 
+      -->
+
+      <ul>
+        <li><a href="my-review.html">My Review</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- 
+        Sometimes we want to open another tab or new window for a website ... We use the same principle
+        but simply redirect the target to a blank (new window) page.
+        We use the same ancor tag with a target attribute - <a href="" target="_blank">
+       -->
+
+       <p>
+        Let's head over to <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Two_Towers" target="_blank">Wikipedia</a>
+        and see what they have to say about the Lord of the Rings, Two Towers. 
+       </p>
+
+       <!-- This is for example purpose!  -->
+       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+      <!-- 
+        The last thing to look at regarding linking, is the self linking option of content. 
+        Since a blogger can have a very huge content with many different sections, it would be a great tool for the blogger
+        to make links for readers to click and be directed directly to the section they find interesting. 
+
+        This is achieved by Id's. Both within an ancor tag, but also directly within the element tag: <h1 id=""> <h1>
+        if you scroll up you would see our header h1 has an unique id called top!
+        You will also see the prologue ancor with strangely hashtag followed with the word prologue. 
+
+        In HTML hashtags indicates an id, and as you can see further down, we placed the id to our prolouge header. 
+        This means that when we click on the ancor title top called prologue, the page automaticly direct us down to the section. 
+       -->
+
+       <h2 id="prologue">Prologue</h2>
+       <p>
+        The Lord of the Rings is composed of six "books", aside from an introduction, a prologue and six appendices. <br>
+        However, the novel was originally published as three separate volumes, due to post-World War II paper shortages and size and <br>
+         price considerations.[2] The Two Towers covers Books Three and Four.
+       </p>
+
+       <br />
+
+      <!-- 
+        If we click the top ancor in the bottom, the page will take us back to the top! 
+        This way the link possibilities also enables us a content designers to engage our audience to an interactive experience
+        rather than a scrolling experience.
+       -->
+
+       <a href="#top">TOP</a>
+
+       
+    
+</body>
+</html>

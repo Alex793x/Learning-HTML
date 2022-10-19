@@ -1,0 +1,105 @@
+<!-- 
+    It is very common to show lists on many websites. 
+    Sometimes in the form of bullets, numbered or defintions. Different approaches can be achieved
+    by using tags for appropiate purposes. We can even achieve nested lists within a HTML script. 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn about Lists</title>
+</head>
+<body>
+
+    <!-- 
+        The first list which I will covere is the ordered list. 
+        The tag for indicating that this is ordered looks like this: <ol> </ol>. 
+
+        The next thing to remember is that any list item should be wrapped with the list tag: <li> </li>. 
+        This way everytime a new list opening / closing tag occurs, a new number will be defined for it. 
+     -->
+
+     <ol>
+        <li>This is the first item on my list: Eggs</li>
+        <li>This is the second item on my list: Milk</li>
+        <li>Guess what, this is the third item on my list: Honney</li>
+     </ol>
+
+     <br /> <hr /> <br />
+
+     <!-- 
+        The second list form is known as the unordered list. This can also be remembered as the bullet list. 
+        The way we wrap this list is by using the unordered tag: <ul> </ul>.
+
+        The next thing is like with the ordered list, to wrap the list items or content with the list tags: <li> </li>.
+        This time, there won't be a number, but the list will instead be showed with black circles.
+      -->
+
+      <ul>
+        <li>This is the first item on my list: Ketchup</li>
+        <li>This is the second item on my list: Mayonaise</li>
+        <li>This is the third item on my list: Remolade</li>
+      </ul>
+
+      <br /> <hr /> <br />
+
+      <!-- 
+        The last type is called the Definition list, which is based on the title format. 
+        A given title / definition of the list is shows content of what we intend to show. we use the definition list tag: <dl> </dl>.
+
+        This time we will indicate a tittle / definition with the definition title tag: <dt> </dt>
+        This will wrap the title of the definition we want to write. 
+
+        Lastly we use the definition term tag: <dd> </dd> which holds the definition content inside of it! 
+       -->
+
+       <dl>
+        <dt>Dogs</dt>
+        <dd>Dogs are a beautiful creature, and known to be mans best friend!</dd>
+        <dt>Cats</dt>
+        <dd>Cats are known to be the most selfish animal, not caring for anyone else, than themself. <br />
+            It is also known that cats have up to 9 lifes .... that's some craaazy shit!</dd>
+        <dt>Lions</dt>
+        <dd>The king of all animals, with a biting force stronger that anyother cat animals.</dd>
+       </dl>
+
+       <br /> <hr /> <br />
+
+       <!-- 
+        The last way to make lists, is "nested" lists. These lists will have unfilled circles showing that the list 
+        item belongs to a nested list. 
+        We often use these within a bullet list. 
+
+        The syntax dosn't change, only that we nest a unordered list within a list tag: <li> <ul> </ul> </li> 
+        Inside of the unordered list tag, we put new list tags. The comming example will show this. 
+        -->
+
+        <ul>
+            <li>Breakfast:
+                <ul>
+                    <li>Egg and Bacon</li>
+                    <li>Mozzarella with oil and tomatoes</li>
+                    <li>Scrample Eggs with honey and Müsli</li>
+                </ul>
+            </li>
+            <li>Lunch:
+                <ul>
+                    <li>Tuna Sandwhich</li>
+                    <li>Mexicana burger</li>
+                    <li>Mushroom Salad</li>
+                </ul>
+            </li>
+            <li>Dinner:
+                <ul>
+                    <li>Steak with Wine Sauce</li>
+                    <li>Hamburger</li>
+                    <li>Spaghetti Bolognese</li>
+                </ul>
+            </li>
+        </ul>
+    
+</body>
+</html>

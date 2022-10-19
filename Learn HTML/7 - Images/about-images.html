@@ -1,0 +1,77 @@
+<!-- 
+    Images are a fundemental core to any website designs, which is also why when it comes
+    to manipulation and edditing, a lot of attributes can be added and changed with images.
+    For instance we can manipulate the height, width, scale and opacity to make any image we
+    wish to have on our website present the right fit of our intentions.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning about images</title>
+</head>
+<body>
+    
+    <!-- 
+        Whenever we want to add an image we take up the img element tag which has a self-closing-tag: <img src="" alt="" title="" />
+        We add the source destination, which often is a directory within the folder storing all the images.
+        Then we fill out the alt section with a overal description of the image, if the browser would be unable to load the image.
+        Lastly we fill out the title which makes the description written in the title come forward if the mouse is hovering over the image. 
+
+        Free stock photosites: 
+        http://www.fotolia.com/
+        https://www.freeimages.com/
+        https://www.gettyimages.dk/
+        https://www.istockphoto.com/
+
+        We can further add manipulation in the form of height and weight to our image this is done with the attributes width="" and height="".
+        
+        If we wanted to point the image from a website, we could directly inside the src="" add the websitelink of the image try replace with the following link:
+        https://media.gettyimages.com/photos/academy-award-nominees-grant-major-for-best-art-direction-and-dan-picture-id81498032?s=2048x2048
+     -->
+
+     <h1>My Favorite Scenes from Lord of the Rings</h1>
+     <hr /> <br />
+
+     <img src="./images/Aragorn Scene.jpg" alt="Scene from the Lord of the Rings" width="1200" height="800"
+        title="The moment where Aragorn receives the pedal of light from his elven lover" />
+
+     <p>
+        This is a great scene and totally my favorite scene due to the beautiful presentation of the movie plot between Aragorn and Ewyn. 
+     </p>
+     <hr /> <br />
+
+        <!-- 
+            It is very important to do nottice, that there is a huge matter in regards of positioning the image in the HTML code. 
+            We can also choose the presentation of the image based on the placement of the img element tag. 
+
+            Notice the above image, having the paragrah right underneath it. 
+            We could also set an image inside of a paragraph resulting in a very different presentation. The following example will show this situation.
+         -->
+
+     <p>
+        <img src="https://media.gettyimages.com/photos/academy-award-nominee-fran-walsh-philippa-boyens-peter-jackson-for-picture-id80417015?s=2048x2048" 
+            alt="Scene of Gandalf and Frodo" width="800" height="600" title="Gandalf is in deep thoughts of worries about what to do with ring, which Frodo holds" /> 
+            Notice how this paragraph sits very differently on the image, it is directly comming after the image has been shown.
+     </p>
+     <hr /> <br />
+
+     <!-- 
+        Another way to have images is placing the img element tag in the middle of a paragraph.
+        This won't be a common way of doing it, but understanding the placement and watching the actino gives a great opportunity when it comes to understanding 
+        how HTML works. 
+
+        Notice how we a using the direct link of the images in the src="". 
+      -->
+
+      <p>
+        This example will show a picture of a Gandalf drawing, but the image will be right in the middle 
+        <img src="https://media.gettyimages.com/photos/gandalf-the-wizard-in-the-artwork-from-the-film-the-lord-of-the-rings-picture-id169412645?s=2048x2048" 
+            alt="Drawing of Gandalf with a very large sword" title="Gandalf in the mist of a cloud pointing with his large sword" width="600" height="800" />
+        This really shows how weird a placement of images can be! 
+      </p>
+</body>
+</html>

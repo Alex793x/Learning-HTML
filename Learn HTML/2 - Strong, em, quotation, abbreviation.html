@@ -1,0 +1,79 @@
+ <!-- 
+    Different aspects as important sections, emphassised sections, quoted sections, 
+    abbreviations and acronyms should and can be handled with following opening/closing tags.
+ -->
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Extra elements</title>
+ </head>
+ <body>
+
+    <!-- 
+    Whenever someone intends to indicate an important section of content on our HTML, we always 
+    use the strong opening/closing tag - <strong> </strong> by default browsers will show this 
+    content with bold expressions.
+    -->
+
+    <strong><p>
+        I am a very important line!
+    </p></strong>
+
+
+    <!-- 
+      Describing something with "emphasis", or "subtley" changes is best known with the 
+      emphasis opening/closing tag <em> </em>. 
+      This result in the words getting italic, if they are wrapped with the emphasis tags.
+     -->
+
+     <p>
+      The middle <em>WORD</em> is italic.
+     </p>
+
+
+     <!-- 
+      Quotations on an website can be handled through two different ways. The blockquote tag <blockquote> </blockquote>, 
+      or the q opening / closing tags <q> </q>.
+      The blockquote is used for LONGER quotes which takes up an entire paragraph, thus wrapping around the paragraph element <p> </p>. 
+      Browsers tend to indent the content by default, you should rather achieve this effect using CSS. 
+
+      The q is used for shorter quotes, which sits within a paragraph sections. 
+      Unfortunately Internet Exlporer dosn't achieve to understand the <q> which makes most people avoid even using the tag. 
+      -->
+
+
+      <blockquote cite="https://skyprep.com/2013/07/29/15-inspiration-learning-and-training-quotes/"><p>
+         The beautiful thing about learning, is that nobody can take that away from you.
+      </p></blockquote>
+
+
+      <p>
+         I want to quote the next 5 words <q>Can you see that here?</q>
+      </p>
+
+
+      <!-- 
+         Abbreviations - shortened form of a written word, a good practice would to always wrap such word with the abbreviation tag. 
+         The following thing, should also be applied for acronyms. Rather than explaining in details the following example shows 
+         both usecases in action. 
+       -->
+       
+       <!-- Abbrevation -->
+       <p>
+         <abbr title="Professor">Prof</abbr> Stephen Hawkings, is one astonishing physicist and cosmologist. pssst.... the Prof is abbreviated.
+       </p>
+
+
+       
+       <!-- Acronym -->
+       <p>
+         <acronym title="National Aeronatics and Space Administration">NASA</acronym> do some craaaazy stuff.
+       </p>
+
+    
+ </body>
+ </html>

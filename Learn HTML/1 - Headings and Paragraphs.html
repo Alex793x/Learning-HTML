@@ -1,0 +1,98 @@
+<!-- 
+    So whenever someone is talking about Headings and paragraphs
+    One would be talking about <h> </h>  which is a heading openening/closing tag.
+    There are 6 sizes, ranging from h1 -> h6 indicating h1 as being the largest font size. 
+
+    While <p> </p> would be a paragraph opening/closing tag. 
+    Each of these (<h> / <p>) indiciates what we normally would understand in the software
+    Office - Word as being title or text. Whenever you want to make a title your would choose 
+    a header size. While any substance, in the form of text .. is written as being paragraphical.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumb rules to aknowlegde</title>
+</head>
+<body>
+
+
+    <!-- In HTML we have 6 different heading sizes which will be given an example of further down -->
+    <h1> This is the largets heading size </h1>
+    <h2> This is also a heading, but the size is lesser </h2> 
+    <h3> This is another smaller heading </h3>
+    <h4> So is this.... </h4>
+    <h5> Aaaaand this...</h5>
+    <h6> This is the smallest heading option to choose among</h6>
+
+
+    <!-- The next section is a paragraph  -->
+    <p>
+        This is a paragraph ... its nothing else than ordinary text which 
+        we provide to our website
+    </p>
+
+
+
+    <!-- 
+        When it comes to font-weight (being bold texture or italic texture) two options are available
+    <b> </b> which is bold texture. 
+    <i> </i> is being italic texture. 
+    
+    The way to manipulate any text is to wrap the texture inside of the <b> or <i> tags 
+    -->
+
+    <b><p>
+        This is a bold texture, since the paragraph tag is wrapped with the bold openeing /closing tag.
+    </p></b>
+
+    <i><p>
+        This is italic texture, since the paragraph tag is wrapped with the italic openening/closing tag.
+    </p></i>
+
+
+
+    <!-- 
+        When manipulating text with mathematical expressions, we often want to define numbers upperplaced or downplaced. 
+        This is called to the power of x or footnotes with chemical formulas. In other words Superscript / Subscript.
+    
+        To make words/letters/numbers indicating to the power of or upperplaced we use the <sup> </sup> opening/closing tags.
+        To make words/letters/numbers indicating chemical or footnoting expressions we use the <sub> </sub> opening/closing tags.
+    -->
+
+
+    <p>
+        This line has many following numbers in a superscript expressions: <sup>12345678910</sup>
+    </p>
+
+    <p>
+        This line has many letters in a subsript expression: <sub>abcdefghijklmnopqrxyzæøå</sub>
+    </p>
+
+
+
+    <!-- 
+        Sometimes we want to add manually a "line break", in other words a new line. The most common way 
+        whenever we do that in HTML is with a break expression: <br /> Whenever this tag is placed after a word/letter/number
+        a natural new line will be added.
+
+        Beside new lines, we often uses horizontal lines or more correctly called horizontal "rules". 
+        Such rule is a line splitting text or content with an horizontal line and is written as <hr />. 
+    -->
+
+    <p>
+        This paragraph has a newline <br />
+        Look how the text is suddenly spanding over two lines, while also having a few new lines untill the next paragraph. <br /> <br />
+    </p>
+
+    <p>
+        This pargraph is top.
+        <hr />
+        This paragraph is bottom... can you see the horizontal line above this paragraph? 
+    </p>
+    
+</body>
+</html>
